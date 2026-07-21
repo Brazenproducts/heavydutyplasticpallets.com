@@ -61,19 +61,22 @@ footer{background:#050d18;color:#2a4060;text-align:center;padding:20px;font-size
 footer a{color:#3a6090;text-decoration:none}
 @media(max-width:720px){.hero{grid-template-columns:1fr}.hero-right{display:none}.pallet-cards{grid-template-columns:1fr}.two-split{grid-template-columns:1fr}}
 
+    
     /* ===== MOBILE OVERFLOW FIX ===== */
     body { overflow-x: hidden; }
     @media (max-width: 768px) {
       nav {
         padding: 0 16px !important;
-        overflow: hidden;
+        width: 100%;
+        box-sizing: border-box;
       }
       .nav-logo, .nav-brand {
-        font-size: 0.95rem !important;
+        font-size: 1rem !important;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 55vw;
+        max-width: 70vw;
+        display: block;
       }
       .nav-links { display: none !important; }
     }
