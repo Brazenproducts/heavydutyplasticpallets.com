@@ -60,7 +60,25 @@ header a.cta{background:#4a9eff;color:#07101e;padding:9px 20px;text-decoration:n
 footer{background:#050d18;color:#2a4060;text-align:center;padding:20px;font-size:0.78rem}
 footer a{color:#3a6090;text-decoration:none}
 @media(max-width:720px){.hero{grid-template-columns:1fr}.hero-right{display:none}.pallet-cards{grid-template-columns:1fr}.two-split{grid-template-columns:1fr}}
-</style>
+
+    /* ===== MOBILE OVERFLOW FIX ===== */
+    body { overflow-x: hidden; }
+    @media (max-width: 768px) {
+      nav {
+        padding: 0 16px !important;
+        overflow: hidden;
+      }
+      .nav-logo, .nav-brand {
+        font-size: 0.95rem !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 55vw;
+      }
+      .nav-links { display: none !important; }
+    }
+
+  </style>
 </head>
 <body>
 <header>
